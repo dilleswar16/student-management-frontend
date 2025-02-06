@@ -4,13 +4,12 @@ import StudentTable from './components/StudentTable'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
 
      <StudentTable />
-     
+
     </>
   )
 }

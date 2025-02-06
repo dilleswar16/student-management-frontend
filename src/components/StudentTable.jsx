@@ -85,6 +85,7 @@ const StudentTable = () => {
           .then((response) => {
             console.log("Student updated successfully:", response.data);
             startCountdown(`Updated successfully with ID: ${response.data.id}`);
+            fetchStudents();
           })
           .catch((error) => {
             console.log("Errrrrrrrrrr...........")
@@ -108,7 +109,7 @@ const StudentTable = () => {
   };
 
   const startCountdown = (message) => {
-    let countdown = 5;
+    let countdown = 3;
     setAcknowledgment(
       <>
         {message} -{" "}
